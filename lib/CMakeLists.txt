@@ -7,6 +7,7 @@ set (MTCNN_LIB_SRC_PATH  "${MTCNN_LIB_PATH}/src" )
 set (MTCNN_LIB_INCLUDE_PATH  "${MTCNN_LIB_PATH}/include")
 
 find_package(OpenCV REQUIRED)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 #set includes
 include_directories (
