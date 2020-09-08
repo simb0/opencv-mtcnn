@@ -1,4 +1,4 @@
-# opencv-mtcnn
+# opencv-mtcnn with JNA
 
 This is an inference implementation of MTCNN (Multi-task Cascaded Convolutional Network) to perform Face Detection and Alignment using OpenCV's DNN module.
 
