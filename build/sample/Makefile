@@ -122,19 +122,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-sample/CMakeFiles/app.dir/rule:
-	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f CMakeFiles/Makefile2 sample/CMakeFiles/app.dir/rule
-.PHONY : sample/CMakeFiles/app.dir/rule
+sample/CMakeFiles/opencvmtcnn.dir/rule:
+	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f CMakeFiles/Makefile2 sample/CMakeFiles/opencvmtcnn.dir/rule
+.PHONY : sample/CMakeFiles/opencvmtcnn.dir/rule
 
 # Convenience name for target.
-app: sample/CMakeFiles/app.dir/rule
+opencvmtcnn: sample/CMakeFiles/opencvmtcnn.dir/rule
 
-.PHONY : app
+.PHONY : opencvmtcnn
 
 # fast build rule for target.
-app/fast:
-	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/build
-.PHONY : app/fast
+opencvmtcnn/fast:
+	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/build
+.PHONY : opencvmtcnn/fast
 
 src/OpenCvMtcnn.o: src/OpenCvMtcnn.cc.o
 
@@ -142,7 +142,7 @@ src/OpenCvMtcnn.o: src/OpenCvMtcnn.cc.o
 
 # target to build an object file
 src/OpenCvMtcnn.cc.o:
-	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/src/OpenCvMtcnn.cc.o
+	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/src/OpenCvMtcnn.cc.o
 .PHONY : src/OpenCvMtcnn.cc.o
 
 src/OpenCvMtcnn.i: src/OpenCvMtcnn.cc.i
@@ -151,7 +151,7 @@ src/OpenCvMtcnn.i: src/OpenCvMtcnn.cc.i
 
 # target to preprocess a source file
 src/OpenCvMtcnn.cc.i:
-	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/src/OpenCvMtcnn.cc.i
+	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/src/OpenCvMtcnn.cc.i
 .PHONY : src/OpenCvMtcnn.cc.i
 
 src/OpenCvMtcnn.s: src/OpenCvMtcnn.cc.s
@@ -160,7 +160,7 @@ src/OpenCvMtcnn.s: src/OpenCvMtcnn.cc.s
 
 # target to generate assembly for a file
 src/OpenCvMtcnn.cc.s:
-	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/src/OpenCvMtcnn.cc.s
+	cd /media/adrebert/LINUX/Developing/opencv-mtcnn/build && $(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/src/OpenCvMtcnn.cc.s
 .PHONY : src/OpenCvMtcnn.cc.s
 
 # Help Target
@@ -172,7 +172,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... app"
+	@echo "... opencvmtcnn"
 	@echo "... src/OpenCvMtcnn.o"
 	@echo "... src/OpenCvMtcnn.i"
 	@echo "... src/OpenCvMtcnn.s"

@@ -135,17 +135,17 @@ mtcnn/fast:
 .PHONY : mtcnn/fast
 
 #=============================================================================
-# Target rules for targets named app
+# Target rules for targets named opencvmtcnn
 
 # Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 app
-.PHONY : app
+opencvmtcnn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencvmtcnn
+.PHONY : opencvmtcnn
 
 # fast build rule for target.
-app/fast:
-	$(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/build
-.PHONY : app/fast
+opencvmtcnn/fast:
+	$(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/build
+.PHONY : opencvmtcnn/fast
 
 # Help Target
 help:
@@ -157,7 +157,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... mtcnn"
-	@echo "... app"
+	@echo "... opencvmtcnn"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 #configure variables
-set (SAMPLE_NAME "app")
+set (SAMPLE_NAME "opencvmtcnn")
 
 #configure directories
 set (SAMPLE_PATH "${PROJECT_SOURCE_DIR}/sample")

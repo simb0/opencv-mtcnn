@@ -8,4 +8,4 @@
 /media/adrebert/LINUX/Developing/opencv-mtcnn/build/sample/CMakeFiles/rebuild_cache.dir
 /media/adrebert/LINUX/Developing/opencv-mtcnn/build/sample/CMakeFiles/edit_cache.dir
 /media/adrebert/LINUX/Developing/opencv-mtcnn/build/sample/CMakeFiles/test.dir
-/media/adrebert/LINUX/Developing/opencv-mtcnn/build/sample/CMakeFiles/app.dir
+/media/adrebert/LINUX/Developing/opencv-mtcnn/build/sample/CMakeFiles/opencvmtcnn.dir

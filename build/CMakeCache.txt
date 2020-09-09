@@ -245,9 +245,6 @@ MTCNN_SOURCE_DIR:STATIC=/media/adrebert/LINUX/Developing/opencv-mtcnn
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
-//Dependencies for the target
-app_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;Boost::filesystem;general;Boost::timer;general;Boost::chrono;general;/usr/lib/jvm/java-11-openjdk-amd64/lib/libjawt.so;general;/usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so;general;mtcnn;general;-pthread;general;-ldl;general;-static-libgcc;general;-static-libstdc++;
-
 //The directory containing a CMake configuration file for boost_chrono.
 boost_chrono_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0
 
@@ -259,6 +256,9 @@ boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0
 
 //The directory containing a CMake configuration file for boost_timer.
 boost_timer_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_timer-1.71.0
+
+//Dependencies for the target
+opencvmtcnn_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;Boost::filesystem;general;Boost::timer;general;Boost::chrono;general;/usr/lib/jvm/java-11-openjdk-amd64/lib/libjawt.so;general;/usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so;general;mtcnn;general;-pthread;general;-ldl;general;-static-libgcc;general;-static-libstdc++;
 
 
 ########################

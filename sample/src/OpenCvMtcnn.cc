@@ -11,13 +11,13 @@
 
 #include <jni.h>        // JNI header provided by JDK
 #include <stdio.h>      // C Standard IO Header
-#include "de_mypicardo_facer_face_detection_business_OpenCvMtcnn.h"   // Generated
+#include "de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector.h"   // Generated
 
 namespace fs = boost::filesystem;
 
 using rectPoints = std::pair<cv::Rect, std::vector<cv::Point>>;
 
-JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_business_OpenCvMtcnn_findFaces(JNIEnv *env, jobject thisObj, jstring mdir, jstring imagePath) {
+JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector_findFaces(JNIEnv *env, jobject thisObj, jstring mdir, jstring imagePath) {
 
     const char *modelPath = env->GetStringUTFChars(mdir, 0);
     const char *imgPath = env->GetStringUTFChars(imagePath, 0);

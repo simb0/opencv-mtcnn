@@ -92,7 +92,7 @@ lib/clean: lib/CMakeFiles/mtcnn.dir/clean
 # Directory level rules for directory sample
 
 # Recursive "all" directory target.
-sample/all: sample/CMakeFiles/app.dir/all
+sample/all: sample/CMakeFiles/opencvmtcnn.dir/all
 
 .PHONY : sample/all
 
@@ -102,7 +102,7 @@ sample/preinstall:
 .PHONY : sample/preinstall
 
 # Recursive "clean" directory target.
-sample/clean: sample/CMakeFiles/app.dir/clean
+sample/clean: sample/CMakeFiles/opencvmtcnn.dir/clean
 
 .PHONY : sample/clean
 
@@ -113,7 +113,7 @@ sample/clean: sample/CMakeFiles/app.dir/clean
 lib/CMakeFiles/mtcnn.dir/all:
 	$(MAKE) -f lib/CMakeFiles/mtcnn.dir/build.make lib/CMakeFiles/mtcnn.dir/depend
 	$(MAKE) -f lib/CMakeFiles/mtcnn.dir/build.make lib/CMakeFiles/mtcnn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adrebert/LINUX/Developing/opencv-mtcnn/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target mtcnn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adrebert/LINUX/Developing/opencv-mtcnn/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target mtcnn"
 .PHONY : lib/CMakeFiles/mtcnn.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,31 +134,31 @@ lib/CMakeFiles/mtcnn.dir/clean:
 .PHONY : lib/CMakeFiles/mtcnn.dir/clean
 
 #=============================================================================
-# Target rules for target sample/CMakeFiles/app.dir
+# Target rules for target sample/CMakeFiles/opencvmtcnn.dir
 
 # All Build rule for target.
-sample/CMakeFiles/app.dir/all: lib/CMakeFiles/mtcnn.dir/all
-	$(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/depend
-	$(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adrebert/LINUX/Developing/opencv-mtcnn/build/CMakeFiles --progress-num=1,2 "Built target app"
-.PHONY : sample/CMakeFiles/app.dir/all
+sample/CMakeFiles/opencvmtcnn.dir/all: lib/CMakeFiles/mtcnn.dir/all
+	$(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/depend
+	$(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/adrebert/LINUX/Developing/opencv-mtcnn/build/CMakeFiles --progress-num=6,7 "Built target opencvmtcnn"
+.PHONY : sample/CMakeFiles/opencvmtcnn.dir/all
 
 # Build rule for subdir invocation for target.
-sample/CMakeFiles/app.dir/rule: cmake_check_build_system
+sample/CMakeFiles/opencvmtcnn.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/adrebert/LINUX/Developing/opencv-mtcnn/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 sample/CMakeFiles/app.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 sample/CMakeFiles/opencvmtcnn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/adrebert/LINUX/Developing/opencv-mtcnn/build/CMakeFiles 0
-.PHONY : sample/CMakeFiles/app.dir/rule
+.PHONY : sample/CMakeFiles/opencvmtcnn.dir/rule
 
 # Convenience name for target.
-app: sample/CMakeFiles/app.dir/rule
+opencvmtcnn: sample/CMakeFiles/opencvmtcnn.dir/rule
 
-.PHONY : app
+.PHONY : opencvmtcnn
 
 # clean rule for target.
-sample/CMakeFiles/app.dir/clean:
-	$(MAKE) -f sample/CMakeFiles/app.dir/build.make sample/CMakeFiles/app.dir/clean
-.PHONY : sample/CMakeFiles/app.dir/clean
+sample/CMakeFiles/opencvmtcnn.dir/clean:
+	$(MAKE) -f sample/CMakeFiles/opencvmtcnn.dir/build.make sample/CMakeFiles/opencvmtcnn.dir/clean
+.PHONY : sample/CMakeFiles/opencvmtcnn.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
