@@ -43,12 +43,6 @@ jni.h
 -
 
 /media/adrebert/LINUX/Developing/opencv-mtcnn/sample/src/OpenCvMtcnn.cc
-boost/filesystem.hpp
--
-boost/filesystem/path.hpp
--
-boost/timer/timer.hpp
--
 opencv2/dnn.hpp
 -
 opencv2/highgui.hpp
