@@ -53,7 +53,7 @@ std::string json = "[";
 	if(i == faces.size()-1) {
 		elEnd = "";
 	}
-	json  = json + "{ " + "\"topLeft\":" +std::to_string((int)faces[i].bbox.x1) + ", \"topRight\":"+std::to_string((int)faces[i].bbox.x2) + ", \"bottomLeft\":" +std::to_string((int)faces[i].bbox.y1) + ", \"bottomRight\":" +std::to_string((int)faces[i].bbox.y2) + " }"+elEnd;
+	json  = json + "{ " + "\"left\":" +std::to_string((int)faces[i].bbox.x1) + ", \"right\":"+std::to_string((int)faces[i].bbox.x2) + ", \"top\":" +std::to_string((int)faces[i].bbox.y1) + ", \"bottom\":" +std::to_string((int)faces[i].bbox.y2) + " }"+elEnd;
  }
 
 json = json + "]";
