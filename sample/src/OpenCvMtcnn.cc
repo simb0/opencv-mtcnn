@@ -12,7 +12,7 @@
 
 using rectPoints = std::pair<cv::Rect, std::vector<cv::Point>>;
 
-JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector_findFaces(JNIEnv *env, jobject thisObj, jstring mdir, jstring imagePath, jfloat minFaceSize, jfloat scaleFactor) {
+JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector_findFaces(JNIEnv *env, jobject thisObj, jstring mdir, jstring imagePath, jfloat minFaceSize, jfloat scaleFactor, jfloat pThreshold, jfloat rThreshold, jfloat oThreshold) {
 
   const char *modelPath = env->GetStringUTFChars(mdir, 0);
   const char *imgPath = env->GetStringUTFChars(imagePath, 0);
@@ -22,17 +22,17 @@ JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_
   ProposalNetwork::Config pConfig;
   pConfig.caffeModel = modelDir +"/det1.caffemodel";
   pConfig.protoText =  modelDir +"/det1.prototxt";
-  pConfig.threshold = 0.6f;
+  pConfig.threshold = pThreshold;
 
   RefineNetwork::Config rConfig;
   rConfig.caffeModel = modelDir +"/det2.caffemodel";
   rConfig.protoText =  modelDir +"/det2.prototxt";
-  rConfig.threshold = 0.7f;
+  rConfig.threshold = rThreshold;
 
   OutputNetwork::Config oConfig;
   oConfig.caffeModel = modelDir +"/det3.caffemodel";
   oConfig.protoText =  modelDir +"/det3.prototxt";
-  oConfig.threshold = 0.7f;
+  oConfig.threshold = oThreshold;
 
   MTCNNDetector detector(pConfig, rConfig, oConfig);
   cv::Mat img = cv::imread(imgPath);
