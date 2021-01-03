@@ -12,7 +12,7 @@
 
 using rectPoints = std::pair<cv::Rect, std::vector<cv::Point>>;
 
-JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector_findFaces(JNIEnv *env, jobject thisObj, jstring mdir, jstring imagePath) {
+JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector_findFaces(JNIEnv *env, jobject thisObj, jstring mdir, jstring imagePath, jfloat minFaceSize, jfloat scaleFactor) {
 
   const char *modelPath = env->GetStringUTFChars(mdir, 0);
   const char *imgPath = env->GetStringUTFChars(imagePath, 0);
@@ -40,7 +40,7 @@ JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_
   std::vector<Face> faces;
 
 
-  faces = detector.detect(img, 20.f, 0.709f);
+  faces = detector.detect(img, minFaceSize, scaleFactor);
 
 
   std::cout << "Number of faces found in the supplied image - " << faces.size()
