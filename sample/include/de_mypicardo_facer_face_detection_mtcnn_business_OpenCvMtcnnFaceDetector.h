@@ -13,7 +13,7 @@ extern "C" {
  * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL Java_de_mypicardo_facer_face_detection_mtcnn_business_OpenCvMtcnnFaceDetector_findFaces
-  (JNIEnv *, jobject, jstring, jstring);
+  (JNIEnv *, jobject, jstring, jstring, jfloat, jfloat, jfloat, jfloat, jfloat);
 
 #ifdef __cplusplus
 }
